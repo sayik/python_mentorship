@@ -40,3 +40,13 @@ def steps(number):
         return 1 + steps(number // 2)
 
     return 1 + steps(number * 3 + 1)
+
+## using aall and takewhile
+print(all(False if i < 0 else True for i in [1, -2, 3]))
+
+numbers = [50, 5, 6, -7]
+
+from itertools import takewhile
+
+result = all(i >= 0 for i in takewhile(lambda x: x >= 0, numbers))
+print(result)
