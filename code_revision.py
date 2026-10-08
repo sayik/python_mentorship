@@ -50,3 +50,14 @@ from itertools import takewhile
 
 result = all(i >= 0 for i in takewhile(lambda x: x >= 0, numbers))
 print(result)
+
+
+"""Using Sorted"""
+
+users = [{"name":"Alice", "age":8}, {"name":"Bob", "age":75}, {"name":"John", "age":55}]
+
+result = sorted(users, key=lambda user: user["age"], reverse=True)
+
+print(result)
+
+
