@@ -129,3 +129,25 @@ try:
         print(i, j)
 except ValueError as e:
     print(f"Length mismatch: {e}")
+
+----------------------------------------------------------------------------------------------------------------------------
+## Collection Counter
+
+### List
+from collections import Counter
+
+words = ["python", "is", "really", "fun", "is", "is"]
+count = Counter(words)
+print(count["is"])
+print(count.most_common(3))
+
+### String
+from collections import Counter
+
+words = "mississippi"
+count = Counter(words)
+print(count)
+print(count.most_common(3))
+
+# NEXT : 19 Group values
+
