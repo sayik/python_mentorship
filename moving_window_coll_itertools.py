@@ -35,15 +35,15 @@ for _ in range(len(numbers)):
 
 
 ## Reusable
-# def sliding_window(numbers, k):
-#     start, end = 0, k
-# 
-#     while end <= len(numbers):
-#         yield numbers[start:end]
-#         start += 1
-#         end += 1
-# 
-# 
-# for window in sliding_window([1, 2, 3, 4, 5], 3):
-#     print(window)
-#     
+def sliding_window(numbers, k):
+    start, end = 0, k
+
+    while end <= len(numbers):
+        yield numbers[start:end]
+        start += 1
+        end += 1
+
+
+for window in sliding_window([1, 2, 3, 4, 5], 3):
+    print(window)
+    
